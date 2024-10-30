@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Responde 3 preguntas, al equivocarte tienes ciertas pistas">
+    <meta name="keywords" content="juego, preguntas, quizz, pistas">
+    <meta name="author" content="Nombre del autor">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Preguntas Informáticas</h1>
+    </header>
+
+    <main>
+        <form id="quizForm">
+            <div>
+                <label for="question1">¿Qué programa malicioso se replica y afecta archivos en un sistema?</label>
+                <input type="text" id="question1" name="question1">
+                <p class="hint" id="hint1">Pista: Es algo que Windows Defender intenta evitar en tu PC</p>
+            </div>
+            <div>
+                <label for="question2">¿Qué red conecta dispositivos dentro de un área local?</label>
+                <input type="text" id="question2" name="question2">
+                <p class="hint" id="hint2">Pista: Tipo de conexión pequeña</p>
+            </div>
+            <div>
+                <label for="question3">¿Cómo se llama la red global de información y servicios?</label>
+                <input type="text" id="question3" name="question3">
+                <p class="hint" id="hint3">Pista: El servicio al que todos nos conectamos para navegar, sin esto no puedes utilizar cosas Online</p>
+            </div>
+            <button type="button" onclick="checkAnswers()">Enviar</button>
+        </form>
+        <p id="congrats" style="display:none;">¡Felicidades! Haz logrado completar las preguntas exitosamente</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
